@@ -6,6 +6,7 @@
 	--grey: #757575;
 	--darkgrey: #2f303a;
 	--cream: #f5f4fa;
+	--transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -382,6 +383,33 @@ li {
 	margin: 0;
 }
 /* Portfolio only*/
+
+/* portfolia anim  */
+.portfolio-label {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-text {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+	top: 0;
+	left: 0;
+	width: 370px;
+	background: rgba(33, 150, 243, 0.9);
+	font-size: 18px;
+	line-height: 1.56;
+	color: var(--white);
+	padding: 49px 45px 49px 24px;
+	transform: translateY(100%);
+	transition: 250ms transform var(--transition);
+	cursor: pointer;
+	border: solid 1px rgba(33, 150, 243, 0.9);
+}
+.product-borders:hover .portfolio-text {
+	transform: translateY(0);
+}
+/* portfolia anim  */
 
 /* Icons svg only no footer*/
 .svg-top-one {
