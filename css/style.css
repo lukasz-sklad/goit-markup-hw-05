@@ -453,7 +453,6 @@ li {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	transition: visibility 250ms var(--transition), opacity 250ms var(--transition);
 }
 
 .modal {
@@ -464,7 +463,6 @@ li {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	margin: auto;
-	transition: transform 250ms var(--transition);
 }
 
 .close-btn {
