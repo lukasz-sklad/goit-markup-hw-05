@@ -393,8 +393,8 @@ li {
 	position: absolute;
 	margin-top: 0px;
 	margin-left: 0px;
-	top: 0;
-	left: 0;
+	top: 262;
+	left: 215;
 	width: 370px;
 	background: rgba(33, 150, 243, 0.9);
 	font-size: 18px;
@@ -404,7 +404,7 @@ li {
 	transform: translateY(100%);
 	transition: 250ms transform var(--transition);
 	cursor: pointer;
-	border: solid 1px rgba(33, 150, 243, 0.9);
+	border: solid 1.4px rgba(33, 150, 243, 0.9);
 }
 .product-borders:hover .portfolio-text {
 	transform: translateY(0);
