@@ -38,23 +38,20 @@ li {
 	color: var(--black);
 	font-weight: 500;
 	text-decoration: none;
-	
 }
 .link-s {
+	display: flex;
 	color: var(--grey);
 	font-weight: 500;
 	text-decoration: none;
-	
 }
 .link-s:hover {
 	color: var(--blue);
-	
 }
 
 .link-blue:hover,
 .link:hover {
 	color: var(--blue);
-	
 }
 
 .link[title]:focus {
@@ -62,7 +59,6 @@ li {
 }
 .link[title]:hover {
 	color: var(--blue);
-	
 }
 .current-link::after {
 	content: ' ';
@@ -71,7 +67,7 @@ li {
 	bottom: 0;
 	left: 0;
 	background-color: var(--blue);
-	transform: translateY(36px);
+	transform: translateY(29px);
 	border-radius: 2px;
 	pointer-events: none;
 }
@@ -131,7 +127,9 @@ li {
 
 	background-color: var(--darkgrey);
 	color: var(--white);
-	width: 100%;
+	/* width: 100%; */
+	width: 1600px;
+	/* position: relative; */
 	display: flex;
 	gap: 30px;
 	flex-direction: column;
@@ -428,11 +426,16 @@ li {
 
 /* Icons svg only no footer*/
 .svg-top-one {
-	display: inline-block;
 	fill: var(--grey);
+	display: flex;
+	margin-right: 10px;
 }
+.icon-spacing {
+	margin-right: 10px;
+  }
 .svg-top-two {
-	display: inline-block;
+	display: flex;
+	margin-right: 10px;
 	fill: var(--grey);
 }
 .svg-top-one:hover {
