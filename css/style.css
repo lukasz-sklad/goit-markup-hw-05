@@ -508,6 +508,12 @@ li {
 	margin: auto;
 }
 
+.modal:active {
+	background-color: var(--blue);
+	transform: rotate(360deg);
+	transition: 250ms transform var(--transition);
+}
+
 .close-btn {
 	position: absolute;
 	top: 8px;
@@ -523,7 +529,7 @@ li {
 	color: var(--blue);
 	border-color: var(--blue);
 	transform: rotate(180deg);
-	transition: 550ms transform var(--transition);
+	transition: 250ms transform var(--transition);
 }
 
 .is-hidden {
