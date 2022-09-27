@@ -507,7 +507,7 @@ li {
 /* Icons svg only */
 
 /* modal */
-.backdrop {
+/* .backdrop {
 	position: fixed;
 	display: flex;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -515,7 +515,7 @@ li {
 	top: 0;
 	right: 0;
 	bottom: 0;
-}
+} */
 
 .modal {
 	top: 50%;
@@ -529,7 +529,7 @@ li {
 	border-radius: 4px;
 	margin: auto;
 	transition-property: visibility, opacity, background-color, transform;
-	transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg);
+	transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg) skew(0deg, 0deg);
 	opacity: 1;
 	visibility: visible;
 	display: block;
@@ -542,7 +542,7 @@ li {
 	animation-play-state: paused;
 }
 
-.close-btn {
+.btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -556,7 +556,7 @@ li {
 	transition-duration: 250ms;
 	transition-delay: 250ms;
 }
-.close-btn:hover {
+.btn:hover {
 	color: var(--blue);
 	border-color: var(--blue);
 	transform: scale(1.1);
@@ -565,7 +565,7 @@ li {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-	transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg);
+	transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(0deg, 0deg);
 }
 @keyframes changeBgColor {
 	0% {
@@ -575,5 +575,4 @@ li {
 		background-color: rgba(230, 230, 230, 20%);
 	}
 }
-
 /* modal end backdrop*/
