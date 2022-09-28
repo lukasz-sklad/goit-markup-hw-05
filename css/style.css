@@ -1,13 +1,14 @@
 /* index */
-
 :root {
 	--black: #000;
 	--white: #fff;
 	--blue: #2196f3;
 	--grey: #757575;
 	--darkgrey: #2f303a;
+	--icongrey: #afb1b8;
 	--cream: #f5f4fa;
 	--transition: cubic-bezier(0.4, 0, 0.2, 1);
+	--text-center: center;
 }
 
 body {
@@ -140,7 +141,7 @@ li {
 .top-text {
 	font-size: 44px;
 	font-weight: 900;
-	text-align: center;
+	text-align: var(--text-center);
 	line-height: 1.364;
 	letter-spacing: 0.06em;
 }
@@ -183,7 +184,7 @@ li {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166666666666667;
-	text-align: center;
+	text-align: var(--text-center);
 	color: var(--black);
 	margin: 0px 0 50px 0;
 }
@@ -207,7 +208,7 @@ li {
 	width: 100%;
 	font-weight: 700;
 	line-height: 1.14;
-	text-align: center;
+	text-align: var(--text-center);
 	text-transform: uppercase;
 	padding: 27px 0px;
 	color: var(--white);
@@ -266,7 +267,7 @@ li {
 	margin: 0;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	text-align: center;
+	text-align: var(--text-center);
 }
 .team-name {
 	color: var(--black);
@@ -351,17 +352,17 @@ li {
 	gap: 10px;
 }
 .footer-social-icons {
-	fill: white;
+	fill: var(--white);
 	background-color: rgba(255, 255, 255, 10%);
 	border-radius: 50%;
-	color: #757575;
+	color: var(--grey);
 	width: 44px;
 	height: 44px;
 	cursor: pointer;
 }
 .footer-social-icons:hover,
 .footer-social-icons:focus {
-	background-color: #2196f3;
+	background-color: var(--blue);
 }
 /* footer */
 
@@ -369,7 +370,7 @@ li {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166666666666667;
-	text-align: center;
+	text-align: var(--text-center);
 	color: var(--black);
 	margin: 95px 0 50px 0;
 }
@@ -461,21 +462,21 @@ li {
 	fill: var(--blue);
 }
 .svg {
-	background-color: #f5f4fa;
+	background-color: var(--cream);
 }
 .icon {
 	width: 270px;
 	height: 120px;
 }
 .member-social-icon {
-	fill: #afb1b8;
+	fill: var(--icongrey);
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 }
 .member-social-icon:hover,
 .member-social-icon:focus {
-	background-color: #2196f3;
+	background-color: var(--blue);
 	fill: white;
 }
 .member-social {
@@ -495,13 +496,13 @@ li {
 .icons-partners {
 	width: 170px;
 	height: 92px;
-	border: 1px solid #afb1b8;
+	border: 1px solid var(--icongrey);
 	border-radius: 4px;
-	fill: #afb1b8;
+	fill: var(--icongrey);
 }
 .icons-partners:hover {
 	fill: var(--blue);
-	border-color: var(var(--blue));
+	border-color: var(--blue);
 }
 
 /* Icons svg only */
@@ -548,7 +549,7 @@ li {
 	right: 8px;
 	width: 30px;
 	height: 30px;
-	background-color: #fff;
+	background-color: var(--white);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
